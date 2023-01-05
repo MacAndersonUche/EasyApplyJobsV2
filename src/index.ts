@@ -1,12 +1,9 @@
-// import { details } from "./env.config";
-import * as dotenv from "dotenv";
-import { details } from "./env.config";
+
+import { details } from "./constants";
+
 import { login } from "./util";
 
 
-dotenv.config({ path: __dirname + './env.config.ts' });
 
-
-
-console.log("Email Address: " + details.emailAddress);
+login(details.email, details.password);
 
